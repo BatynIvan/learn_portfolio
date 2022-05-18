@@ -1,0 +1,143 @@
+body{
+  margin: 0;
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+}
+.container_menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  color: #f5f6f7;
+  letter-spacing: 5px;
+  background-color: #f8f8f8;
+}
+
+.menu_btn {
+  font-size: 18px;
+}
+.navbar {
+  display: flex;
+}
+.menu_item {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.menu_text {
+  color: #777;
+  text-decoration: none;
+  padding: 15px;
+}
+.reason {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1abc9c;
+  text-align: center;
+  height: 600px;
+}
+.container_text {
+  margin: 60px;
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.1;
+  font-weight: unset;
+}
+.person_photo {
+  border-radius: 50%;
+  width: 350px;
+}
+.about_search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #474e5d;
+  height: 300px;
+}
+.about_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #fff;
+}
+.search_btn {
+  text-align: center;
+  color: #474e5d;
+  font-size: 20px;
+}
+
+.search_field {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 6px;
+ }
+.image_btn {
+  width: 20px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+  height: 550px;
+}
+.content_title {
+  margin: 60px;
+  font-size: 24px;
+  color: #555555;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: unset;
+}
+
+.content_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.content_text {
+  text-align: center;
+  font-size: 16px;
+  color: #555555
+}
+.content_container1 {
+  padding: 15px;
+}
+.content_img {
+  width: 250px;
+}
+
+.container_fluid {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f2f2f;
+  height: 100px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.text_fluid {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+.wear {
+  color: #337ab7;
+  text-decoration: none;
+}
