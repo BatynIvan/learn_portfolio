@@ -54,7 +54,6 @@ body{
   justify-content: space-between;
   text-align: center;
   background-color: #474e5d;
-  height: 300px;
 }
 .about_text {
   display: flex;
@@ -95,7 +94,6 @@ body{
   align-items: center;
   background-color: #fff;
   text-align: center;
-  height: 550px;
 }
 .content_title {
   margin: 60px;
@@ -119,7 +117,7 @@ body{
   padding: 15px;
 }
 .content_img {
-  width: 250px;
+  width: 100%;
 }
 
 .container_fluid {
@@ -140,4 +138,43 @@ body{
 .wear {
   color: #337ab7;
   text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar_button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content_container {
+    display: block;
+  }
+  .container_menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar_button {
+    display: block;
+    margin-right: 30px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: solid 1px #d3d1d1;
+  }
+  .navbar_mobile {
+    width: 100px;
+    height: 50px;
+  }
+  .icon_bar {
+    width: 25px;
+    height: 2px;
+    background-color: #888;
+    display: block;
+    margin: 6px;
+  }
 }
