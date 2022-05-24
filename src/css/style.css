@@ -149,6 +149,9 @@ body{
   .navbar_button {
     display: none;
   }
+  .mobile_container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -165,10 +168,7 @@ body{
     border-radius: 4px;
     background-color: transparent;
     border: solid 1px #d3d1d1;
-  }
-  .navbar_mobile {
-    width: 100px;
-    height: 50px;
+    
   }
   .icon_bar {
     width: 25px;
@@ -176,5 +176,22 @@ body{
     background-color: #888;
     display: block;
     margin: 6px;
+  }
+  #hidden {
+  display: none;
+  height: 100px;
+  background: red;
+  }
+  :checked + #hidden {
+  display: block;
+  }
+  .box {
+    display: none;
+  }
+  .menu_icon {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
   }
 }

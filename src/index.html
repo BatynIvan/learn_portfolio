@@ -14,12 +14,19 @@
         <ul class="menu">
           <li class="menu_btn"><a class="menu_text" href="#">Me</a></li>
         </ul>
-        <button type="button" class="navbar_button">
-          <span class="icon_bar"></span>
-          <span class="icon_bar"></span>
-          <span class="icon_bar"></span>
-        </button>
-        <ul class="navbar navbar_mobile">
+        <div class="mobile_container">
+            <input type="checkbox" id="my_checkbox">
+              <div id="hidden">
+                <li class="menu_item"><a class="menu_text" href="#">WHO</a></li>
+                <li class="menu_item"><a class="menu_text" href="#">WHAT</a></li>
+                <li class="menu_item"><a class="menu_text" href="#">WHERE</a></li>
+              </div>
+            <label for="my_checkbox" class="navbar_button" class="box">
+              <img class="menu_icon" src="img/menu_icon.png" alt="">
+            </label>
+          </div>
+        
+          <ul class="navbar ">
           <li class="menu_item"><a class="menu_text" href="#">WHO</a></li>
           <li class="menu_item"><a class="menu_text" href="#">WHAT</a></li>
           <li class="menu_item"><a class="menu_text" href="#">WHERE</a></li>
