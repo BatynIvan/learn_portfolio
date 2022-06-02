@@ -273,10 +273,6 @@ body {
     text-align: start;
   }
 
-  .menu_item:hover {
-    background-color: #CFD8DC;
-  }
-
   .menu_mobile {
     list-style: none;
     width: 50px;
