@@ -269,6 +269,8 @@ body {
     transition-duration: .25s;
     letter-spacing: 5px;
     color: #777;
+    width: 100%;
+    text-align: start;
   }
 
   .menu_item:hover {
