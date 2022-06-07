@@ -1,3 +1,7 @@
+:root {
+  --text-gray: #777;
+}
+
 body {
   margin: 0;
   font: 20px Montserrat, sans-serif;
@@ -29,7 +33,7 @@ body {
 }
 
 .menu_text {
-  color: #777;
+  color: var(--text-gray);
   text-decoration: none;
   padding: 12px;
 }
@@ -75,7 +79,7 @@ body {
 
 .search_btn {
   text-align: center;
-  color: #474e5d;
+  color: var(--text-gray);
   font-size: 20px;
 }
 
@@ -110,7 +114,6 @@ body {
 
 .content_title {
   margin: 60px;
-  font-size: 24px;
   color: #555555;
   line-height: 1.1;
   text-align: center;
@@ -125,7 +128,7 @@ body {
 .content_text {
   text-align: center;
   font-size: 16px;
-  color: #555555
+  color: var(--text-gray);
 }
 
 .content_container1 {
@@ -268,7 +271,7 @@ body {
     text-decoration: none;
     transition-duration: .25s;
     letter-spacing: 5px;
-    color: #777;
+    color: var(--text-gray);
     width: 100%;
     text-align: start;
   }
