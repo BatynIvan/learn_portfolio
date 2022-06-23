@@ -281,3 +281,12 @@ body {
     width: 50px;
   }
 }
+
+.btn_js {
+  width: 70px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: yellow;
+}

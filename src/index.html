@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfollio</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/node.js"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
   <header>
@@ -66,6 +66,7 @@
       </div>
     </div>
   </section>
+
   <section id="where" class="content">
     <h3 class="content_title">Where To Find Me?</h3>
     <div class="content_container">
@@ -89,11 +90,55 @@
     </div>
     </div>
   </section>
+
   <footer class="container_fluid">
     <p class="text_fluid">
       Bootstrap Theme Made By
       <a class="wear" href="https://www.w3schools.com/">www.w3schools.com</a>
     </p>
+    <button onclick="myFunctionBtn()" class="btn_js">run_js</button>
+    <button onclick="myFunction()" class="btn_js">Рівняння</button>
   </footer>
+
+  <script>
+    function myFunctionBtn() {
+      let value = Number(prompt('Введіть число до 100', ''));
+      if (isNaN(value)) {
+        alert('Не правильно, введіть число!');
+        return myFunctionBtn();
+      }
+      if (value < 0) {
+        alert('Введіть додатнє число!');
+        return myFunctionBtn();
+      }
+      for (let i = 0; i <= value; i++) {
+        if (i == 100) {
+          break;
+        } else if (value > 100) {
+          alert ('Цикл перервано');
+          return;
+        }
+        console.log(i);
+      }
+    }
+
+    function myFunction() {
+      let a = prompt('Введіть значення "а"');
+      let b = prompt('Введіть значення "b"');
+      let c = prompt('Введіть значення "c"');
+      if (isNaN(a, b, c)) {
+        alert('Не правильно, введіть значення (числа)')
+        return myFunction();
+      }
+      let d = b**2 - 4*a*c;
+      alert('Дискримінаннт ='+ +d);
+      if (d > 0) {
+        let x1 = (-b + Math.sqrt(d)) / (2 * a);
+        let x2 = (-b - Math.sqrt(d)) / (2 * a);
+        alert('Корінь x1 ='+ +x1);
+        alert('Корінь x2 ='+  +x2);
+      }
+    }
+  </script>
 </body>
 </html>
