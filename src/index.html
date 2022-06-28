@@ -111,32 +111,37 @@
         alert('Введіть додатнє число!');
         return myFunctionBtn();
       }
-      for (let i = 0; i <= value; i++) {
-        if (i == 100) {
-          break;
-        } else if (value > 100) {
-          alert ('Цикл перервано');
-          return;
-        }
+      for (let i = 10; i <= value && i <= 20; i++) {
         console.log(i);
+        if (i == 100) {
+          console.log('Цикл перервано');
+          /* break; */
+        }
       }
     }
 
     function myFunction() {
-      let a = prompt('Введіть значення "а"');
-      let b = prompt('Введіть значення "b"');
-      let c = prompt('Введіть значення "c"');
-      if (isNaN(a, b, c)) {
-        alert('Не правильно, введіть значення (числа)')
+      let a = Number(prompt('Введіть значення "а"'));
+      let b = Number(prompt('Введіть значення "b"'));
+      let c = Number(prompt('Введіть значення "c"'));
+      if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        alert('Не правильно, введіть значення рівняння');
         return myFunction();
       }
+      if (a == 0) {
+        alert('Якщо а=0, то це не квадратне рівняння, розвязку нема');
+        return;
+      }
       let d = b**2 - 4*a*c;
-      alert('Дискримінаннт ='+ +d);
+      alert('Дискримінаннт =' +d);
       if (d > 0) {
         let x1 = (-b + Math.sqrt(d)) / (2 * a);
         let x2 = (-b - Math.sqrt(d)) / (2 * a);
-        alert('Корінь x1 ='+ +x1);
-        alert('Корінь x2 ='+  +x2);
+        alert('Корінь x1 =' +x1);
+        alert('Корінь x2 =' +x2);
+      }
+      if (d < 0) {
+        alert('Корінів нема, тому що дискимінант відємний');
       }
     }
   </script>
